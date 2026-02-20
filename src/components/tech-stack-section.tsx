@@ -26,7 +26,7 @@ const techSections = [
       "배터리 효율성 최적화",
       "오프라인 모드 완벽 지원"
     ],
-    imageUrl: "/images/tech-android.jpg",
+    imageUrl: "/images/tech-android-native.jpg",
     bgColor: "from-[#FAF5EF] to-[#F5EDE3]",
     accentColor: "#AA6B1C"
   },
