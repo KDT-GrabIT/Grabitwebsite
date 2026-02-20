@@ -26,7 +26,7 @@ const techSections = [
       "배터리 효율성 최적화",
       "오프라인 모드 완벽 지원"
     ],
-    imageUrl: "https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzbWFydHBob25lJTIwYW5kcm9pZCUyMGtvdGxpbiUyMG1vYmlsZSUyMGRldmVsb3BtZW50fGVufDF8fHx8MTc3MDk0Njc4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+    imageUrl: "/images/tech-android.jpg",
     bgColor: "from-[#FAF5EF] to-[#F5EDE3]",
     accentColor: "#AA6B1C"
   },
@@ -41,7 +41,7 @@ const techSections = [
       "개인정보 100% 기기 내 보호",
       "즉각적인 AI 응답 속도"
     ],
-    imageUrl: "https://images.unsplash.com/photo-1749006590639-e749e6b7d84c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2hpcCUyMHByb2Nlc3NvciUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzcwOTQ2NzkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageUrl: "/images/tech-ondevice-ai.jpg",
     bgColor: "from-[#FFF4E6] to-[#FFEFD5]",
     accentColor: "#F7C02F"
   },
@@ -57,7 +57,7 @@ const techSections = [
       "다양한 조명 환경에서도 정확",
       "지속적인 모델 업데이트"
     ],
-    imageUrl: "https://images.unsplash.com/photo-1554936970-ce06538caf54?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb21wdXRlciUyMHZpc2lvbiUyMG9iamVjdCUyMGRldGVjdGlvbiUyMEFJfGVufDF8fHx8MTc3MDk0Njc5MHww&ixlib=rb-4.1.0&q=80&w=1080",
+    imageUrl: "/images/tech-object-detection.jpg",
     bgColor: "from-[#F5E6D3] to-[#EBD9C3]",
     accentColor: "#EA580C"
   },
@@ -73,7 +73,7 @@ const techSections = [
       "저사양 Android 기기에서도 원활한 추론",
       "서버 의존 없는 완전한 엣지 AI"
     ],
-    imageUrl: "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjBjbG91ZCUyMGNvbXB1dGluZyUyMGRhdGElMjBjZW50ZXJ8ZW58MXx8fHwxNzcwOTQ2NzkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageUrl: "/images/tech-tflite.jpg",
     bgColor: "from-[#FFF8E7] to-[#FFF0D1]",
     accentColor: "#FCC36E"
   },
@@ -89,7 +89,7 @@ const techSections = [
       "경량화된 AI 모델",
       "저사양 기기에서도 완벽 작동"
     ],
-    imageUrl: "https://images.unsplash.com/photo-1708576180355-4915da6e9ec2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYXN0JTIwc3BlZWQlMjBwZXJmb3JtYW5jZSUyMG9wdGltaXphdGlvbiUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzcwOTQ2NzkxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+    imageUrl: "/images/tech-edge-speed.jpg",
     bgColor: "from-[#F9F1E7] to-[#F0E5D8]",
     accentColor: "#D4A574"
   }
