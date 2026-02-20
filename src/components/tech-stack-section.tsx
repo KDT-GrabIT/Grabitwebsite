@@ -158,7 +158,7 @@ function TechFeatureSection({
               <ImageWithFallback
                 src={section.imageUrl}
                 alt={section.name}
-                className="w-full h-[400px] object-cover"
+                className={`w-full h-[400px] ${index === 0 ? 'object-contain bg-gray-900' : 'object-cover'}`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               
