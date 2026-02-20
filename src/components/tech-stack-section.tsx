@@ -39,8 +39,7 @@ const techSections = [
     features: [
       "인터넷 없이도 완벽한 작동",
       "개인정보 100% 기기 내 보호",
-      "즉각적인 AI 응답 속도",
-      "데이터 통신료 제로"
+      "즉각적인 AI 응답 속도"
     ],
     imageUrl: "https://images.unsplash.com/photo-1749006590639-e749e6b7d84c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcnRpZmljaWFsJTIwaW50ZWxsaWdlbmNlJTIwY2hpcCUyMHByb2Nlc3NvciUyMHRlY2hub2xvZ3l8ZW58MXx8fHwxNzcwOTQ2NzkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
     bgColor: "from-[#FFF4E6] to-[#FFEFD5]",
@@ -48,10 +47,10 @@ const techSections = [
   },
   {
     icon: Brain,
-    name: "YOLO 객체 탐지",
+    name: "YOLOX-Nano 객체 탐지",
     tag: "Detection",
     title: "실시간 상품 인식",
-    description: "최신 YOLO(You Only Look Once) 딥러닝 모델을 통해 카메라에 비친 상품을 실시간으로 인식합니다. 복잡한 편의점 진열대에서도 정확하게 원하는 상품을 찾아냅니다.",
+    description: "YOLOX-Nano 경량 딥러닝 모델을 통해 카메라에 비친 상품을 실시간으로 인식합니다. 복잡한 편의점 진열대에서도 정확하게 원하는 상품을 찾아냅니다.",
     features: [
       "초당 30프레임 실시간 탐지",
       "수백 가지 상품 동시 인식",
@@ -64,15 +63,15 @@ const techSections = [
   },
   {
     icon: Server,
-    name: "RAG 기반 AI 서버",
-    tag: "Server",
-    title: "정확한 상품 정보",
-    description: "검색 증강 생성(RAG) 기술로 최신 상품 데이터베이스를 실시간 참조합니다. AI가 정확하고 신뢰할 수 있는 상품 정보를 제공하여 더 나은 쇼핑 결정을 도와드립니다.",
+    name: "TensorFlow Lite",
+    tag: "TFLite",
+    title: "경량화된 온디바이스 추론",
+    description: "TensorFlow Lite를 활용하여 YOLOX 모델을 Float16으로 양자화하고, 모바일 기기에서 직접 추론을 수행합니다. 서버 없이도 빠르고 정확한 AI 처리가 가능합니다.",
     features: [
-      "최신 상품 정보 실시간 업데이트",
-      "영양 성분 및 알레르기 정보",
-      "가격 비교 및 할인 정보",
-      "유사 상품 추천"
+      "Float16 양자화로 모델 경량화",
+      "PTH에서 TFLite로 자동 변환 파이프라인",
+      "저사양 Android 기기에서도 원활한 추론",
+      "서버 의존 없는 완전한 엣지 AI"
     ],
     imageUrl: "https://images.unsplash.com/photo-1506399558188-acca6f8cbf41?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZXJ2ZXIlMjBjbG91ZCUyMGNvbXB1dGluZyUyMGRhdGElMjBjZW50ZXJ8ZW58MXx8fHwxNzcwOTQ2NzkwfDA&ixlib=rb-4.1.0&q=80&w=1080",
     bgColor: "from-[#FFF8E7] to-[#FFF0D1]",
