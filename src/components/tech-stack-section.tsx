@@ -26,7 +26,7 @@ const techSections = [
       "배터리 효율성 최적화",
       "오프라인 모드 완벽 지원"
     ],
-    imageUrl: "/images/tech-android-native.jpg",
+    imageUrl: "/images/tech-android-coding.jpg",
     bgColor: "from-[#FAF5EF] to-[#F5EDE3]",
     accentColor: "#AA6B1C"
   },
@@ -158,7 +158,7 @@ function TechFeatureSection({
               <ImageWithFallback
                 src={section.imageUrl}
                 alt={section.name}
-                className={`w-full h-[400px] ${index === 0 ? 'object-contain bg-gray-900' : 'object-cover'}`}
+                className={`w-full h-[400px] ${index === 0 ? 'object-contain bg-gray-900 p-4' : 'object-cover'}`}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               
