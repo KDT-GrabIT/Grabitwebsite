@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
+@font-face {
+  font-family: "KccHanbit";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2403-2@1.0/KCC-Hanbit.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -54,13 +60,19 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+    top: -3px;
   }
 }
 
 /* Typewriter cursor blink */
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 .animate-blink {
@@ -83,6 +95,23 @@
   animation: fadeInUp 0.7s ease-out forwards;
 }
 
+/* Slide-in-right animation for phone */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+  animation-fill-mode: backwards;
+}
+
 /* ======================================
    Embossed Paper Braille
    Simulates thick braille paper with
@@ -96,8 +125,8 @@
  * - Soft rounded corners so it feels organic, not UI.
  */
 .braille-container {
-  --paper: hsl(38, 25%, 92%);        /* warm cream */
-  --paper-edge: hsl(38, 18%, 85%);   /* slightly darker edge */
+  --paper: hsl(38, 25%, 92%); /* warm cream */
+  --paper-edge: hsl(38, 18%, 85%); /* slightly darker edge */
 
   position: relative;
   padding: 1.6rem 2rem;
@@ -126,8 +155,12 @@
 }
 
 @keyframes brailleCellFade {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /*
@@ -154,10 +187,10 @@
   box-shadow:
     /* Light catch on upper-left edge */
     -0.4px -0.4px 0.6px rgba(255, 255, 255, 0.7),
-    /* Soft depth shadow below-right */
-    0.6px 0.8px 1.2px rgba(120, 100, 70, 0.22),
-    /* Very subtle ambient contact shadow */
-    0 0.3px 0.5px rgba(100, 80, 50, 0.1);
+    /* Soft depth shadow below-right */ 0.6px 0.8px 1.2px
+      rgba(120, 100, 70, 0.22),
+    /* Very subtle ambient contact shadow */ 0 0.3px 0.5px
+      rgba(100, 80, 50, 0.1);
 }
 
 /*
