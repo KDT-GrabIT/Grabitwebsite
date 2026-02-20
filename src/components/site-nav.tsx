@@ -49,7 +49,7 @@ export function SiteNav() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-base md:text-lg font-black transition-colors hover:text-lime-400 text-white"
+                className="text-base md:text-lg font-black transition-colors hover:text-[#B1C9EF] text-white"
                 style={{
                   fontFamily: "KccHanbit",
                   textShadow: "0 1px 3px rgba(0, 0, 0, 0.3)"
