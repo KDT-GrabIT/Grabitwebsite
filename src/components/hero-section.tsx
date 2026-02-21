@@ -94,11 +94,13 @@ export function HeroSection() {
             >
               <button
                 onClick={() => setShowQRModal(true)}
-                className="flex items-center gap-3 bg-black text-white px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
-                style={{ fontFamily: "KccHanbit" }}
+                className="flex items-center gap-4 bg-black text-white pl-5 pr-7 py-3 rounded-xl transition-all duration-300 hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl border border-white/20"
               >
-                <QrCode className="w-6 h-6" />
-                <span className="text-lg font-bold">QR 코드 스캔 다운로드</span>
+                <QrCode className="w-8 h-8 flex-shrink-0" />
+                <div className="flex flex-col items-start leading-tight">
+                  <span className="text-[11px] tracking-wide" style={{ fontFamily: "KccHanbit" }}>QR 코드 스캔</span>
+                  <span className="text-2xl font-bold -mt-0.5" style={{ fontFamily: "'Impact', 'Arial Black', sans-serif", letterSpacing: "0.02em" }}>다운로드</span>
+                </div>
               </button>
             </div>
           </div>
