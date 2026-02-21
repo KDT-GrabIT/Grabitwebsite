@@ -107,7 +107,7 @@ export function HeroSection() {
                 <QrCode style={{ width: 32, height: 32, flexShrink: 0, color: "#ffffff" }} />
                 <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1.1 }}>
                   <span style={{ fontSize: 11, letterSpacing: "0.05em", color: "#ffffff", fontFamily: "KccHanbit" }}>QR 코드 스캔</span>
-                  <span style={{ fontSize: 26, fontWeight: 700, color: "#ffffff", fontFamily: "'Impact','Arial Black',sans-serif", letterSpacing: "0.02em" }}>다운로드</span>
+                  <span style={{ fontSize: 26, fontWeight: 700, color: "#ffffff", fontFamily: "'Impact','Arial Black',sans-serif", letterSpacing: "0.02em" }}>Download</span>
                 </div>
               </button>
             </div>
