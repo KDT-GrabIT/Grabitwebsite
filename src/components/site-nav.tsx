@@ -31,6 +31,7 @@ export function SiteNav() {
             src={logoImage}
             alt="GrabIT Logo"
             className="h-12 md:h-16 w-auto drop-shadow-lg"
+            style={{ borderRadius: "12px" }}
           />
           <span 
             className="text-2xl md:text-3xl font-black text-white"
