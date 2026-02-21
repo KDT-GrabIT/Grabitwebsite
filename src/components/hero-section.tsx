@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import backgroundImage from "figma:asset/cbd948ba2a23691d0fce1532d83f4f934177d861.png";
 import qrButtonImage from "figma:asset/77ed712f3402c8f472cf4cd9c7d4d87bd905251b.png";
-import qrCodeImage from "figma:asset/fef1ed1c183228bf04acfbd55d94537e9f956be3.png";
+const qrCodeImage = "/images/qr-code.svg";
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false);
