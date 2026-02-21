@@ -68,7 +68,6 @@ const techSections = [
     description: "TensorFlow Lite를 활용하여 YOLOX 모델을 Float16으로 양자화하고, 모바일 기기에서 직접 추론을 수행합니다. 서버 없이도 빠르고 정확한 AI 처리가 가능합니다.",
     features: [
       "Float16 양자화로 모델 경량화",
-      "PTH에서 TFLite로 자동 변환 파이프라인",
       "서버 의존 없는 완전한 엣지 AI"
     ],
     imageUrl: "/images/tech-tflite.jpg",
