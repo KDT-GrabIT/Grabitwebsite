@@ -1,4 +1,4 @@
-import { Github, Mail } from "lucide-react"
+import { Github } from "lucide-react"
 
 export function SiteFooter() {
   return (
@@ -38,12 +38,14 @@ export function SiteFooter() {
               GitHub
             </a>
             <a
-              href="mailto:contact@grabit.app"
+              href="https://github.com/KDT-GrabIT"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 text-sm text-primary-foreground/70 transition-colors hover:text-primary"
-              aria-label="이메일 문의하기"
+              aria-label="GrabIT GitHub 조직 바로가기"
             >
-              <Mail className="h-5 w-5" aria-hidden="true" />
-              contact@grabit.app
+              <Github className="h-5 w-5" aria-hidden="true" />
+              https://github.com/KDT-GrabIT
             </a>
           </div>
         </div>

@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import backgroundImage from "figma:asset/cbd948ba2a23691d0fce1532d83f4f934177d861.png";
-import qrButtonImage from "figma:asset/77ed712f3402c8f472cf4cd9c7d4d87bd905251b.png";
-import qrCodeImage from "figma:asset/fef1ed1c183228bf04acfbd55d94537e9f956be3.png";
+import { QrCode } from "lucide-react";
+const qrCodeImage = "/GrabIT-qrcode.svg";
 
 export function HeroSection() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -48,7 +48,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-10 bg-black/50" />
 
       {/* Content Container */}
-      <div className="relative z-20 mx-auto w-full px-8 py-16 md:px-12 lg:px-16">
+      <div className="relative z-20 mx-auto w-full px-8 py-16 md:px-12 lg:px-16" style={{ paddingTop: "clamp(120px, 15vh, 200px)" }}>
         <div className="flex items-center justify-center md:justify-start max-w-7xl mx-auto">
           {/* Text Content */}
           <div className="flex flex-col gap-8 max-w-3xl">
@@ -94,23 +94,21 @@ export function HeroSection() {
             >
               <button
                 onClick={() => setShowQRModal(true)}
-                className="transition-all duration-300 hover:scale-105 cursor-pointer"
+                className="flex items-center gap-4 rounded-xl transition-all duration-300 hover:scale-105 cursor-pointer"
                 style={{
-                  filter: 'drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3)) drop-shadow(-1px -1px 2px rgba(255, 255, 255, 0.3))',
+                  backgroundColor: "#000000",
+                  color: "#ffffff",
+                  padding: "14px 28px 14px 20px",
+                  borderRadius: "12px",
+                  border: "1px solid rgba(255,255,255,0.3)",
+                  boxShadow: "0 4px 14px rgba(0,0,0,0.4)",
                 }}
               >
-                <img 
-                  src={qrButtonImage} 
-                  alt="앱 다운로드 QR 코드 스캔"
-                  className="h-20 w-auto rounded-2xl"
-                  style={{
-                    boxShadow: `
-                      inset -2px -2px 4px rgba(255, 255, 255, 0.5),
-                      inset 2px 2px 4px rgba(0, 0, 0, 0.2),
-                      3px 3px 8px rgba(0, 0, 0, 0.3)
-                    `
-                  }}
-                />
+                <QrCode style={{ width: 32, height: 32, flexShrink: 0, color: "#ffffff" }} />
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1.1 }}>
+                  <span style={{ fontSize: 11, letterSpacing: "0.05em", color: "#ffffff", fontFamily: "KccHanbit" }}>QR 코드 스캔</span>
+                  <span style={{ fontSize: 26, fontWeight: 700, color: "#ffffff", fontFamily: "KccHanbit", letterSpacing: "0.02em" }}>Download</span>
+                </div>
               </button>
             </div>
           </div>
