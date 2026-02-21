@@ -94,12 +94,20 @@ export function HeroSection() {
             >
               <button
                 onClick={() => setShowQRModal(true)}
-                className="flex items-center gap-4 bg-black text-white pl-5 pr-7 py-3 rounded-xl transition-all duration-300 hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl border border-white/20"
+                className="flex items-center gap-4 rounded-xl transition-all duration-300 hover:scale-105 cursor-pointer"
+                style={{
+                  backgroundColor: "#000000",
+                  color: "#ffffff",
+                  padding: "14px 28px 14px 20px",
+                  borderRadius: "12px",
+                  border: "1px solid rgba(255,255,255,0.3)",
+                  boxShadow: "0 4px 14px rgba(0,0,0,0.4)",
+                }}
               >
-                <QrCode className="w-8 h-8 flex-shrink-0" />
-                <div className="flex flex-col items-start leading-tight">
-                  <span className="text-[11px] tracking-wide" style={{ fontFamily: "KccHanbit" }}>QR 코드 스캔</span>
-                  <span className="text-2xl font-bold -mt-0.5" style={{ fontFamily: "'Impact', 'Arial Black', sans-serif", letterSpacing: "0.02em" }}>다운로드</span>
+                <QrCode style={{ width: 32, height: 32, flexShrink: 0, color: "#ffffff" }} />
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1.1 }}>
+                  <span style={{ fontSize: 11, letterSpacing: "0.05em", color: "#ffffff", fontFamily: "KccHanbit" }}>QR 코드 스캔</span>
+                  <span style={{ fontSize: 26, fontWeight: 700, color: "#ffffff", fontFamily: "'Impact','Arial Black',sans-serif", letterSpacing: "0.02em" }}>다운로드</span>
                 </div>
               </button>
             </div>
