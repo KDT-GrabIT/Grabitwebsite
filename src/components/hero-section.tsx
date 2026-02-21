@@ -48,7 +48,7 @@ export function HeroSection() {
       <div className="absolute inset-0 z-10 bg-black/50" />
 
       {/* Content Container */}
-      <div className="relative z-20 mx-auto w-full px-8 py-16 md:px-12 lg:px-16">
+      <div className="relative z-20 mx-auto w-full px-8 py-16 md:px-12 lg:px-16" style={{ paddingTop: "clamp(120px, 15vh, 200px)" }}>
         <div className="flex items-center justify-center md:justify-start max-w-7xl mx-auto">
           {/* Text Content */}
           <div className="flex flex-col gap-8 max-w-3xl">
