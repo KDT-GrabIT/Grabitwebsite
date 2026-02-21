@@ -83,6 +83,22 @@ export function AppIntroSection() {
                   alt="GrabIT 앱 화면 - 객체 인식"
                   className="w-[280px] h-[570px] object-cover"
                 />
+                {/* Reflection */}
+                <div style={{ 
+                  overflow: "hidden", 
+                  height: "120px", 
+                  marginTop: "-2px",
+                  WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,0.25), transparent)",
+                  maskImage: "linear-gradient(to bottom, rgba(0,0,0,0.25), transparent)"
+                }}>
+                  <img 
+                    src={phoneScreen1} 
+                    alt=""
+                    aria-hidden="true"
+                    className="w-[280px] h-[570px] object-cover"
+                    style={{ transform: "scaleY(-1)", transformOrigin: "top center" }}
+                  />
+                </div>
               </div>
 
               {/* Second Image - Front/Right */}
@@ -97,6 +113,22 @@ export function AppIntroSection() {
                   alt="GrabIT 앱 화면 - 시작하기"
                   className="w-[280px] h-[570px] object-cover"
                 />
+                {/* Reflection */}
+                <div style={{ 
+                  overflow: "hidden", 
+                  height: "120px", 
+                  marginTop: "-2px",
+                  WebkitMaskImage: "linear-gradient(to bottom, rgba(0,0,0,0.25), transparent)",
+                  maskImage: "linear-gradient(to bottom, rgba(0,0,0,0.25), transparent)"
+                }}>
+                  <img 
+                    src={phoneScreen2} 
+                    alt=""
+                    aria-hidden="true"
+                    className="w-[280px] h-[570px] object-cover"
+                    style={{ transform: "scaleY(-1)", transformOrigin: "top center" }}
+                  />
+                </div>
               </div>
             </div>
           </div>
