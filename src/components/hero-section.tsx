@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import backgroundImage from "figma:asset/cbd948ba2a23691d0fce1532d83f4f934177d861.png";
-import qrButtonImage from "figma:asset/77ed712f3402c8f472cf4cd9c7d4d87bd905251b.png";
+import { QrCode } from "lucide-react";
 const qrCodeImage = "/GrabIT-qrcode.svg";
 
 export function HeroSection() {
@@ -94,23 +94,11 @@ export function HeroSection() {
             >
               <button
                 onClick={() => setShowQRModal(true)}
-                className="transition-all duration-300 hover:scale-105 cursor-pointer"
-                style={{
-                  filter: 'drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3)) drop-shadow(-1px -1px 2px rgba(255, 255, 255, 0.3))',
-                }}
+                className="flex items-center gap-3 bg-black text-white px-8 py-4 rounded-2xl transition-all duration-300 hover:scale-105 cursor-pointer shadow-lg hover:shadow-xl"
+                style={{ fontFamily: "KccHanbit" }}
               >
-                <img 
-                  src={qrButtonImage} 
-                  alt="앱 다운로드 QR 코드 스캔"
-                  className="h-20 w-auto rounded-2xl"
-                  style={{
-                    boxShadow: `
-                      inset -2px -2px 4px rgba(255, 255, 255, 0.5),
-                      inset 2px 2px 4px rgba(0, 0, 0, 0.2),
-                      3px 3px 8px rgba(0, 0, 0, 0.3)
-                    `
-                  }}
-                />
+                <QrCode className="w-6 h-6" />
+                <span className="text-lg font-bold">QR 코드 스캔 다운로드</span>
               </button>
             </div>
           </div>
