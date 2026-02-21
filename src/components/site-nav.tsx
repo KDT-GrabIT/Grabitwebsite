@@ -31,6 +31,7 @@ export function SiteNav() {
             src={logoImage}
             alt="GrabIT Logo"
             className="h-12 md:h-16 w-auto drop-shadow-lg"
+            style={{ borderRadius: "12px" }}
           />
           <span 
             className="text-2xl md:text-3xl font-black text-white"
@@ -49,7 +50,7 @@ export function SiteNav() {
             <li key={link.href}>
               <a
                 href={link.href}
-                className="text-base md:text-lg font-black transition-colors hover:text-lime-400 text-white"
+                className="text-base md:text-lg font-black transition-colors hover:text-[#B5D0F3] text-white"
                 style={{
                   fontFamily: "KccHanbit",
                   textShadow: "0 1px 3px rgba(0, 0, 0, 0.3)"
