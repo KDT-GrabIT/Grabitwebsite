@@ -69,7 +69,6 @@ const techSections = [
     features: [
       "Float16 양자화로 모델 경량화",
       "PTH에서 TFLite로 자동 변환 파이프라인",
-      "저사양 Android 기기에서도 원활한 추론",
       "서버 의존 없는 완전한 엣지 AI"
     ],
     imageUrl: "/images/tech-tflite.jpg",
