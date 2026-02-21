@@ -10,7 +10,6 @@ import {
   Smartphone,
   Brain,
   Server,
-  Zap,
 } from "lucide-react";
 
 const techSections = [
@@ -77,22 +76,7 @@ const techSections = [
     bgColor: "from-[#FFF8E7] to-[#FFF0D1]",
     accentColor: "#FCC36E"
   },
-  {
-    icon: Zap,
-    name: "Edge AI 최적화",
-    tag: "Performance",
-    title: "초고속 응답 속도",
-    description: "엣지 컴퓨팅 기술로 AI 모델을 최적화하여 찰나의 순간에도 정확한 답변을 제공합니다. 시각장애인 사용자가 빠르고 편리하게 쇼핑할 수 있도록 모든 과정이 최적화되어 있습니다.",
-    features: [
-      "0.3초 이내 상품 인식",
-      "배터리 소모 최소화",
-      "경량화된 AI 모델",
-      "저사양 기기에서도 완벽 작동"
-    ],
-    imageUrl: "/images/tech-edge-speed.jpg",
-    bgColor: "from-[#F9F1E7] to-[#F0E5D8]",
-    accentColor: "#D4A574"
-  }
+
 ];
 
 function TechFeatureSection({ 
