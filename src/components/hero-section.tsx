@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import backgroundImage from "figma:asset/cbd948ba2a23691d0fce1532d83f4f934177d861.png";
 import { QrCode } from "lucide-react";
 const qrCodeImage = "/GrabIT-qrcode.svg";
@@ -13,7 +13,7 @@ export function HeroSection() {
 
   useEffect(() => {
     setIsLoaded(true);
-    
+
     // Typewriter effect
     let currentIndex = 0;
     const typingInterval = setInterval(() => {
@@ -34,7 +34,7 @@ export function HeroSection() {
       aria-label="GrabIT 히어로 섹션"
     >
       {/* Background Image */}
-      <div 
+      <div
         className="absolute inset-0 z-0 w-full h-full"
         style={{
           backgroundImage: `url(${backgroundImage})`,
@@ -48,14 +48,19 @@ export function HeroSection() {
       <div className="absolute inset-0 z-10 bg-black/50" />
 
       {/* Content Container */}
-      <div className="relative z-20 mx-auto w-full px-8 py-16 md:px-12 lg:px-16" style={{ paddingTop: "clamp(120px, 15vh, 200px)" }}>
+      <div
+        className="relative z-20 mx-auto w-full px-8 py-16 md:px-12 lg:px-16"
+        style={{ paddingTop: "clamp(120px, 15vh, 200px)" }}
+      >
         <div className="flex items-center justify-center md:justify-start max-w-7xl mx-auto">
           {/* Text Content */}
           <div className="flex flex-col gap-8 max-w-3xl">
             {/* Main Headline */}
             <div
               className={`transition-all duration-1000 ease-out ${
-                isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                isLoaded
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
               }`}
             >
               <h1
@@ -81,7 +86,8 @@ export function HeroSection() {
                   textShadow: "0 2px 10px rgba(0, 0, 0, 0.7)",
                 }}
               >
-                시각장애인을 위한 AI 쇼핑 보조 앱.<br />
+                시각장애인을 위한 AI 쇼핑 보조 앱.
+                <br />
                 카메라 하나로, 쇼핑의 질이 달라집니다.
               </p>
             </div>
@@ -89,11 +95,14 @@ export function HeroSection() {
             {/* App Store Buttons */}
             <div
               className={`flex flex-col sm:flex-row gap-4 transition-all duration-1000 delay-400 ease-out ${
-                isLoaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                isLoaded
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-8"
               }`}
             >
               <button
                 onClick={() => setShowQRModal(true)}
+                aria-label="GrabIT 앱 다운로드용 QR 코드 팝업 열기"
                 className="flex items-center gap-4 rounded-xl transition-all duration-300 hover:scale-105 cursor-pointer"
                 style={{
                   backgroundColor: "#000000",
@@ -104,10 +113,43 @@ export function HeroSection() {
                   boxShadow: "0 4px 14px rgba(0,0,0,0.4)",
                 }}
               >
-                <QrCode style={{ width: 32, height: 32, flexShrink: 0, color: "#ffffff" }} />
-                <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", lineHeight: 1.1 }}>
-                  <span style={{ fontSize: 11, letterSpacing: "0.05em", color: "#ffffff", fontFamily: "KccHanbit" }}>QR 코드 스캔</span>
-                  <span style={{ fontSize: 26, fontWeight: 700, color: "#ffffff", fontFamily: "KccHanbit", letterSpacing: "0.02em" }}>Download</span>
+                <QrCode
+                  style={{
+                    width: 32,
+                    height: 32,
+                    flexShrink: 0,
+                    color: "#ffffff",
+                  }}
+                />
+                <div
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "flex-start",
+                    lineHeight: 1.1,
+                  }}
+                >
+                  <span
+                    style={{
+                      fontSize: 11,
+                      letterSpacing: "0.05em",
+                      color: "#ffffff",
+                      fontFamily: "KccHanbit",
+                    }}
+                  >
+                    QR 코드 스캔
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 26,
+                      fontWeight: 700,
+                      color: "#ffffff",
+                      fontFamily: "KccHanbit",
+                      letterSpacing: "0.02em",
+                    }}
+                  >
+                    Download
+                  </span>
                 </div>
               </button>
             </div>
@@ -117,26 +159,30 @@ export function HeroSection() {
 
       {/* QR Modal */}
       {showQRModal && (
-        <div 
+        <div
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm"
           onClick={() => setShowQRModal(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="qr-modal-title"
         >
-          <div 
+          <div
             className="bg-white rounded-3xl p-8 md:p-12 max-w-md w-full mx-4 shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex flex-col items-center">
               {/* QR Code */}
               <div className="bg-white rounded-2xl p-6 mb-6 border-4 border-gray-100">
-                <img 
-                  src={qrCodeImage} 
+                <img
+                  src={qrCodeImage}
                   alt="GrabIT 앱 다운로드 QR 코드"
                   className="w-64 h-64 object-contain"
                 />
               </div>
 
               {/* Title */}
-              <h3 
+              <h3
+                id="qr-modal-title"
                 className="text-2xl md:text-3xl font-bold text-[#3D230A] mb-3 text-center"
                 style={{ fontFamily: "KccHanbit" }}
               >
@@ -144,7 +190,7 @@ export function HeroSection() {
               </h3>
 
               {/* Description */}
-              <p 
+              <p
                 className="text-base md:text-lg text-[#AA6B1C] text-center mb-8"
                 style={{ fontFamily: "KccHanbit" }}
               >
@@ -154,6 +200,7 @@ export function HeroSection() {
               {/* Close Button */}
               <button
                 onClick={() => setShowQRModal(false)}
+                aria-label="팝업 닫기"
                 className="w-full bg-[#AA6B1C] hover:bg-[#8B5516] text-white font-bold py-4 px-8 rounded-xl transition-all duration-300 shadow-lg hover:shadow-xl"
                 style={{ fontFamily: "KccHanbit" }}
               >
@@ -172,7 +219,10 @@ export function HeroSection() {
         aria-hidden="true"
       >
         <div className="flex flex-col items-center gap-2">
-          <span className="text-white/70 text-sm uppercase tracking-wider" style={{ fontFamily: "KccHanbit" }}>
+          <span
+            className="text-white/70 text-sm uppercase tracking-wider"
+            style={{ fontFamily: "KccHanbit" }}
+          >
             Scroll Down
           </span>
           <div className="flex h-12 w-7 items-start justify-center rounded-full border-2 border-white/50 p-1.5">
